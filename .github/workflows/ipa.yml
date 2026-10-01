@@ -391,7 +391,7 @@ jobs:
           
       - name: Inject Tweaks Into IPA
         run: |
-          tweaks="OpenYouTubeSafariExtension.appex"
+          tweaks=""
 
           for f in *.deb; do
             tweaks="$tweaks $f"
