@@ -167,6 +167,18 @@ static NSString *GetCacheSize() { // YTLite - @dayanch96
         settingItemId:0];
     [sectionItems addObject:fixPlaybackissues];
 
+    // Spoof playback client
+    YTSettingsSectionItem *spoofPlaybackClient = [YTSettingsSectionItemClass switchItemWithTitle:YMLOC(@"SPOOF_PLAYBACK_CLIENT")
+        titleDescription:YMLOC(@"SPOOF_PLAYBACK_CLIENT_DESC")
+        accessibilityIdentifier:nil
+        switchOn:IS_ENABLED(SpoofPlaybackClient)
+        switchBlock:^BOOL (YTSettingsCell *cell, BOOL enabled) {
+            [[NSUserDefaults standardUserDefaults] setBool:enabled forKey:SpoofPlaybackClient];
+            return YES;
+        }
+        settingItemId:0];
+    [sectionItems addObject:spoofPlaybackClient];
+
     // Settings
     YTSettingsSectionItem *settings = [YTSettingsSectionItemClass itemWithTitle:nil
         titleDescription:YMLOC(@"SETTINGS")
