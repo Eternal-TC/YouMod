@@ -5,7 +5,7 @@ on:
       repo:
         description: 'Repository to build from'
         required: true
-        default: 'Tonwalter888/YouMod'
+        default: 'Eternal-TC/YouMod'
 
       branch:
         description: 'Branch to build from'
