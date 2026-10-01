@@ -90,6 +90,7 @@
 #define IS_ENABLED(k) [[NSUserDefaults standardUserDefaults] boolForKey:k]
 #define INTFORVAL(v) [[NSUserDefaults standardUserDefaults] integerForKey:v]
 #define FixPlaybackIssues @"YouModFixPlaybackIssues"
+#define SpoofPlaybackClient @"YouModSpoofPlaybackClient"
 #define MuteButton @"YouModMuteButton"
 #define SpeedButton @"YouModSpeedButton"
 #define ShareButton @"YouModShareButton"

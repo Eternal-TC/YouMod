@@ -23,7 +23,9 @@
 
 "EXTRA" = "Extra";
 "FIX_PLAYBACK_ISSUES" = "Fix playback issues (Temporary)";
-"FIX_PLAYBACK_ISSUES_DESC" = "Try to fix video playback issues for some users. Turning this on will make the player automatically reloads itself everytime it errors or fails to play the video.";
+"FIX_PLAYBACK_ISSUES_DESC" = "Try to fix video playback issues for some users. Turning this on will make the player automatically retry and resume where it stopped whenever it errors or fails to play the video. Restart the app to apply.";
+"SPOOF_PLAYBACK_CLIENT" = "Spoof playback client";
+"SPOOF_PLAYBACK_CLIENT_DESC" = "Load videos as the YouTube TV client so playback doesn't stop after ~30 seconds on sideloaded apps. Age-restricted videos may not play. Restart the app to apply.";
 
 "PERFER_HEADER" = "YouMod perferences";
 "PERFER" = "Perferences";
